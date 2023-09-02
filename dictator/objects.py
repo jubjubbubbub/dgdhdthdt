@@ -17,5 +17,5 @@ class PlayerID(Identifier):
         self.id = id
 
 
-class InvalidUsernameFormat(TypeError):
+class InvalidNameFormat(TypeError):
     pass

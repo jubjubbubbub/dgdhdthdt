@@ -235,9 +235,7 @@ class Admin(commands.Cog):
 
     @app_commands.checks.has_role(GAME_MOD_ROLE_ID)
     @app_commands.command()
-    async def whowas(
-        self, interaction: discord.Interaction, character_name: str
-    ) -> None:
+    async def whowas(self, interaction: discord.Interaction) -> None:
         """Look up who a player was in the game."""
         await interaction.response.defer()
 
