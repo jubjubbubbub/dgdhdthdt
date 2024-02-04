@@ -20,6 +20,9 @@ class System(commands.Cog):
         if not message.webhook_id:
             return
 
+        if message.application_id:
+            return
+
         await message.edit(suppress=True)
 
     @app_commands.command()
